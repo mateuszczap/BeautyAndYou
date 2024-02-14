@@ -8,6 +8,7 @@ export default function () {
     
     <div className={styles.main}>
         <Logo/>
+        <div>ZDJĘCIE makijażu albo coś</div>
             <div className={styles.navigation}>
                 <Link href='/o-mnie'>O mnie</Link>
                 <Link href='/galeria-prac'>Galeria prac</Link>
@@ -15,6 +16,7 @@ export default function () {
                 <Link href='/zanim-dasz-sobie'>Zanim dasz sobie zrobić makijaż permanentny</Link>
                 <Link href='/zarezerwuj-wizyte'>Zarezerwuj wizytę</Link>
             </div>
+
         <Footer/>    
     </div>
     );
