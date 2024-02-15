@@ -1,0 +1,7 @@
+.container-pricelist {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+    gap: 20px;
+}
