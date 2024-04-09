@@ -1,13 +1,13 @@
 import { PriceItem } from '../PriceItem';
 import './style.css';
 
-export function Pricelist() {
+export function Pricelist(props: {list: {name: string, price: number}[]}) {
+  const priceListToRender = props.list.map(element => 
+    <PriceItem name={element.name} price={element.price}/>
+    )
   return (
     <div className='container-pricelist'>
-      <PriceItem/>
-      <PriceItem/>
-      <PriceItem/>
-      <PriceItem/>
+      {priceListToRender}
     </div>
   );
 }
